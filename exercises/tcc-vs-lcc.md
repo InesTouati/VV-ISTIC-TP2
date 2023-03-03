@@ -4,3 +4,38 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 ## Answer
 
+Lorsqu'il n'y absolument aucune relation, ou que chaque pair est connectée.
+
+Exemple :
+```
+3 pairs, aucune relation
+public class MyClass {
+   int a, int b, int c;
+   
+   public void method1() {
+      return a;
+   }
+   
+   public void method2() {
+      return b
+   }
+   public void method3() {
+      return c
+   }
+} ```
+
+```3 pairs, aucun lien entre les paramètres donc 
+public class MyClass {
+   int a, int b, int c, int x;
+   
+   public void method1() {
+      return a+x;
+   }
+   
+   public void method2() {
+      return b+x;
+   }
+   public void method3() {
+      return c+x;
+   }
+} ```
