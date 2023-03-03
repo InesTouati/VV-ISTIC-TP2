@@ -24,7 +24,7 @@ public class MyClass {
    }
 } ```
 
-```3 pairs, aucun lien entre les paramètres donc 
+```3 pairs, relation entre chaque pair 
 public class MyClass {
    int a, int b, int c, int x;
    
