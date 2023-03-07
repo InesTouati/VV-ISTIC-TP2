@@ -23,3 +23,22 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
+```
+<rule name="MoreThan3NestedIf"
+      language="java"
+      message="Avoid using more than tree nested if statements in a method."
+    class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <description>
+        This rule detects the use of three or more nested if statements in Java programs.
+    </description>
+    <priority>3</priority>
+    <properties>
+        <property name="xpath">
+            <value>
+                //IfStatement[count(.//IfStatement) &gt;= 3]
+            </value>
+        </property>
+    </properties>
+</rule>
+
+```
